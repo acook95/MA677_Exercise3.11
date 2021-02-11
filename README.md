@@ -10,3 +10,5 @@ power = 1 - beta
 n = 100
 
 how many successes do we need to reject the null hypothesis with less than 5% type 1 and 2 errors?
+
+**I consulted with Bruce for determining the critical values**
