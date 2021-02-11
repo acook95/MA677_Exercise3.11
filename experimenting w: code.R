@@ -85,8 +85,14 @@ pwr <- pbinom(m0, 100, prob = seq(from = 0.4, to = 1, by = 0.01))
 plot(pwr)
 
 
-pwr1 <- cumsum(dbinom(m0, 100, prob = seq(from = 0.4, to = 1, by = 0.01)))
+pwr1 <- cumsum(dbinom(m0, 100, prob = seq(from = 0, to = 1, by = 0.01)))
 plot(pwr1, type = "l")
 
-pwr2 <- cumsum(dbinom(m1, 100, prob = seq(from = 0.4, to = 1, by = 0.1)))
-plot(pwr1, type = "l")
+pwr2 <- cumsum(dbinom(m1, 100, prob = seq(from = 0, to = 1, by = 0.01)))
+plot(pwr2, type = "l", ylab = "power", xlim = c(40,100), ylim = c(0,1))
+lines(pwr1, type = "l", xlab = "probability * 100")
+segments(60, 0.05, 80, 0.05)
+segments(60, 0.05, 60, 0.95)
+segments(60, 0.95, 80, 0.95)
+segments(80, 0.95, 80, 0.05)
+
