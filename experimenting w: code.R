@@ -15,7 +15,7 @@ y <- pbinom(0:10, 10, .3)
 y
 plot(y)
 
-inv <- qbinom(y, 10, .3)
+inv <- qbinom(0.028247, 10, .3)
 inv
 
 samp <- rbinom(100000, 10, .3)
