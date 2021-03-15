@@ -117,3 +117,10 @@ ks.test(sample, func, alternative = "two.sided")
 # The sample is from a different distribution than the pdf given
 
 
+### QUESTION 4 ###
+
+# plug-in estimate for p-q: (# successes)/n - (# successes)/m
+# se for p-q: sqrt(se(p_hat)^2 + se(q_hat)^2)
+# 90% CI: ((# successes)/n - (# successes)/m)) +- 1.645* (sqrt(se(p_hat)^2 + se(q_hat)^2))
+
+
